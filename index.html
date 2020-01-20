@@ -1,16 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html>
+
+<head>
+    <title>Weather App</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h1>
-      Hello git.
-    </h1>
-  </body>
-  <link rel="stylesheet" href="script.js" />
+    <link href="src/styles.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/6d8e897805.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="weather-app">
+            <div class="row">
+                <div class="column">
+                    <h1 id="title">
+                        Weather App
+                    </h1>
+                    <h2 id="subtitle">
+                        Where do you want to go?
+                    </h2>
+                    <form class="search-form" id="search-form">
+                        <input type="search" placeholder="Type name of city..." autofocus="on" autocomplete="off"
+                            class="form-control shadow-sm" id="city-input" />
+                        <input type="submit" value="Search">
+                        <input type="submit" value="Current location" id="current-location">
+
+                    </form>
+                </div>
+                <h1 id="city">
+                </h1>
+                <div>
+                    <span class="date" id="date">
+                    </span>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-6">
+
+                            <div class="weather-description">
+                                <span id="temperature"></span><span class="units">
+                                    <a href="#" id="celsius-link">°C</a> |
+                                    <a href="#" id="fahrenheit-link">°F</a>
+
+                            </div>
+
+                            <div class="weather-description">
+                                <span id="description">
+                                </span>
+                            </div>
+                            <div class="weather-description">
+                                Humidity: <span id="humidity">
+                                </span>
+                                <span class="units"> % </span>
+
+                                <div class="weather-description">
+                                    Wind: <span id="wind">
+                                    </span>
+                                    <span id="units"> "km/h" </span>
+                                </div>
+
+
+                                <i class="fas fa-cloud" id="current-weather"></i>
+
+
+                                <br>
+
+
+                            </div>
+
+                            <div class="weekForecast">
+                                <div class="row">
+                                    <div class="col-3">
+                                        Monday
+                                        <p>
+                                            <i class="fas fa-cloud"></i>
+                                        </p>
+                                        <p>
+                                            High 8°C
+                                        </p>
+                                        <p>
+                                            Low 2°C
+                                        </p>
+                                    </div>
+                                    <div class="col-3">
+                                        Tuesday
+                                        <p>
+                                            <i class="fas fa-cloud"></i>
+                                        </p>
+                                        <p>
+                                            High 8°C
+                                        </p>
+                                        <p>
+                                            Low 2°C
+                                        </p>
+                                    </div>
+                                    <div class="col-3">
+                                        Wednesday
+                                        <p>
+                                            <i class="fas fa-cloud"></i>
+                                        </p>
+                                        <p>
+                                            High 8°C
+                                        </p>
+                                        <p>
+                                            Low 2°C
+                                        </p>
+                                    </div>
+                                    <div class="col-3">
+                                        Thursday
+                                        <p>
+                                            <i class="fas fa-cloud"></i>
+                                        </p>
+                                        <p>
+                                            High 8°C
+                                        </p>
+                                        <p>
+                                            Low 2°C
+                                        </p>
+                                    </div>
+                                    <div class="col-3">
+                                        Friday
+                                        <p>
+                                            <i class="fas fa-cloud"></i>
+
+                                        </p>
+                                        <p>
+                                            High 8°C
+                                        </p>
+                                        <p>
+                                            Low 2°C
+                                        </p>
+                                    </div>
+                                    <div class="col-3">
+                                        Saturday
+                                        <p>
+                                            <i class="fas fa-cloud"></i>
+
+                                        </p>
+                                        <p>
+                                            High 8°C
+                                        </p>
+                                        <p>
+                                            Low 2°C
+                                        </p>
+                                    </div>
+                                    <div class="col-3">
+                                        Sunday
+                                        <p>
+                                            <i class="fas fa-cloud"></i>
+
+                                        </p>
+                                        <p>
+                                            High 8°C
+                                        </p>
+                                        <p>
+                                            Low 2°C
+                                        </p>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+
+
+
+
+                            <script src="src/script.js"></script>
+                        </div class="container">
+</body>
+
 </html>
