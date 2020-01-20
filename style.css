@@ -18,11 +18,6 @@
   text-align: center;
 }
 
-.date {
-  text-align: center;
-  color: white;
-}
-
 h1,
 h2,
 p {
@@ -38,3 +33,12 @@ h1 {
 h2 {
   font-size: 18px;
 }
+
+.date {
+  text-align: center;
+  color: white;
+
+  .temperature {
+
+  text-align: center; 
+  }
