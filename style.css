@@ -1,3 +1,44 @@
-h1 {
+.container {
+  font-family: "Montserrat", sans-serif;
+  color: #193452;
+  text-align: center;
+  padding: 20px;
+  width: 450px;
+  border-radius: 20px;
+  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+}
+.weather-description {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.city {
   text-align: center;
 }
+
+h1,
+h2,
+p {
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  font-size: 48px;
+  letter-spacing: 8px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+.date {
+  text-align: center;
+  color: white;
+
+  .temperature {
+
+  text-align: center; 
+  }
