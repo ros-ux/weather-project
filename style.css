@@ -37,8 +37,8 @@ h2 {
 .date {
   text-align: center;
   color: white;
+}
 
-  .temperature {
-
-  text-align: center; 
-  }
+.temperature {
+  text-align: center;
+}
